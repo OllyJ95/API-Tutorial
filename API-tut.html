@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" type="text/css" href="style.css"/>
 	<head>
 		<meta charset="utf-8">
 		<title>Page Title</title>
 	</head>
 <body>
+<div class="main">
 	<h1>Location Finder</h1>
 	<input type='text' id='location'><button onclick="findLocation()">Find location</button>
 	<p id='address'>Address: </p>
 	<p id='lat'>Lattitude: </p>
 	<p id='lng'>Longitude: </p>
 
-	<div id="map" style="width:600px; height: 200px; overflow: visible;">
+	<div id="map">
 	</div>
+
+</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/script.js"></script>
-	<script asynce defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfzHdqvifsEeQGjy4Fx2wDyEwgPp9OW-A&callback=findLocation"></script>
+	<script asynce defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfzHdqvifsEeQGjy4Fx2wDyEwgPp9OW-A&callback=displayMap"></script>
 </body>
 </html>

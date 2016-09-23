@@ -18,7 +18,6 @@ function findLocation(){
 
  	// Now we can construct the url
 	var url = endpoint + encodedQuery + '&key=' + api_key;
-	console.log('url ' + url);
 	// https://api.opencagedata.com/geocode/v1/json?q=Wellington,+New%20Zealand&key=614bd81902a73f0d3f6db088fdab4f68&pretty=1
 	// It should look like that - try opening that in your browser
 
@@ -38,9 +37,6 @@ function findLocation(){
 	});
 
 	
-
-	console.log("lat: " + lat);
-	console.log(lng);
 }
 
 /* TODO 
@@ -57,8 +53,8 @@ Use the google maps api to insert an embeded map of the location
 function displayMap(lat, lng) {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {
-    center: {lat: lat, lng: lng},
-    zoom: 6
-  };			
+    center: new google.maps.LatLng(lat,lng),
+    zoom: 12
+  };
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 }

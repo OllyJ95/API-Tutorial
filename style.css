@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+	background-color: #e1d2b1;
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+
+}
+
+button{
+	position: relative;
+  	left: 45%;
+
+}
+
+input{
+	position: relative;
+  	left: 45%;
+
+}
+
+h1{
+	text-align: center;
+	font-family: "Tahoma", Geneva, sans-serif;
+}
+
+p {
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	color: black;
+}
+
+#map{
+	overflow: visible;
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
